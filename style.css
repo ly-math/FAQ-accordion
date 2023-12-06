@@ -106,8 +106,16 @@ p {
     max-height: 0;
     overflow: hidden;
     line-height: 1.5rem;
-    transition: max-height .5s ease;
+    transition: max-height .5s ease-in-out;
     border-bottom: 1px solid var(--Light-pink);
+}
+
+.faqs.active .answer {
+    max-height: 300px;
+}
+
+.faqs.active .minus-icon {
+    max-height: 300px;
 }
 
 @media (min-width: 900px) {
